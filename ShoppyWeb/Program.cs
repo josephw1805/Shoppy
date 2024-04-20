@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ShoppyWeb;
+using Shoppy.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 

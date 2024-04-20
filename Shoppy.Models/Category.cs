@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace ShoppyWeb;
+namespace Shoppy.Models;
 
 public class Category
 {

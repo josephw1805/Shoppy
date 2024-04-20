@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppyWeb", "ShoppyWeb\ShoppyWeb.csproj", "{E30D0605-7E2C-46F1-AD03-350E379578C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoppy.DataAccess", "Shoppy.DataAccess\Shoppy.DataAccess.csproj", "{3AF6ED74-FD7A-44E0-B78C-9D310472A807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoppy.Models", "Shoppy.Models\Shoppy.Models.csproj", "{950D5579-00D2-4B11-805E-057366893A6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoppy.Utility", "Shoppy.Utility\Shoppy.Utility.csproj", "{C5730E71-9F01-4A1C-8700-393370167B1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{E30D0605-7E2C-46F1-AD03-350E379578C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E30D0605-7E2C-46F1-AD03-350E379578C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E30D0605-7E2C-46F1-AD03-350E379578C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AF6ED74-FD7A-44E0-B78C-9D310472A807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF6ED74-FD7A-44E0-B78C-9D310472A807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF6ED74-FD7A-44E0-B78C-9D310472A807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF6ED74-FD7A-44E0-B78C-9D310472A807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950D5579-00D2-4B11-805E-057366893A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950D5579-00D2-4B11-805E-057366893A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950D5579-00D2-4B11-805E-057366893A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950D5579-00D2-4B11-805E-057366893A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5730E71-9F01-4A1C-8700-393370167B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5730E71-9F01-4A1C-8700-393370167B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5730E71-9F01-4A1C-8700-393370167B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5730E71-9F01-4A1C-8700-393370167B1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-namespace ShoppyWeb.Models;
+namespace Shoppy.Models;
 
 public class ErrorViewModel
 {

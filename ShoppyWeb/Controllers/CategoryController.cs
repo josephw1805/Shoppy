@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Shoppy.DataAccess;
+using Shoppy.Models;
 
 namespace ShoppyWeb;
 
