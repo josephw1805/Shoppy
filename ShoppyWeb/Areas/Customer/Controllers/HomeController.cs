@@ -4,6 +4,7 @@ using Shoppy.Models;
 
 namespace ShoppyWeb.Controllers;
 
+[Area("Customer")]
 public class HomeController(ILogger<HomeController> logger) : Controller
 {
     private readonly ILogger<HomeController> _logger = logger;
