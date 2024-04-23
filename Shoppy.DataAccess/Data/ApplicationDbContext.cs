@@ -1,15 +1,19 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Shoppy.Models;
 
 namespace Shoppy.DataAccess;
 
-public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
+public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext<IdentityUser>(options)
 {
   public DbSet<Category> Categories { get; set; }
   public DbSet<Product> Products { get; set; }
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
+    base.OnModelCreating(modelBuilder);
+
     modelBuilder.Entity<Category>().HasData(
       new Category { Id = 1, Name = "Electronic Pop", DisplayOrder = 1 },
       new Category { Id = 2, Name = "Pop", DisplayOrder = 2 },
