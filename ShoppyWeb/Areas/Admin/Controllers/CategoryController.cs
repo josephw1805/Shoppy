@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Shoppy.DataAccess;
 using Shoppy.Models;
+using Shoppy.Utility;
 
 namespace ShoppyWeb;
 
 [Area("Admin")]
+[Authorize(Roles = SD.Role_Admin)]
 public class CategoryController(IUnitOfWork unitOfWork) : Controller
 {
   private readonly IUnitOfWork _unitOfWork = unitOfWork;
