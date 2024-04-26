@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <Folder Include="Areas/Admin/Views/Company/" />
+    <Folder Include="Areas/Customer/Views/Cart/" />
     <Folder Include="wwwroot/images/" />
     <Folder Include="wwwroot/images/product/" />
   </ItemGroup>
