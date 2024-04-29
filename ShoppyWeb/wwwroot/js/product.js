@@ -6,9 +6,10 @@ $(document).ready(function () {
 
 function loadDataTable() {
   dataTable = $("#tblData").DataTable({
+    responsive: true,
     ajax: { url: "/admin/product/getall" },
     columns: [
-      { data: "title", width: "20%" },
+      { data: "title", width: "15%" },
       {
         data: "imageUrl",
         render: function (imageUrl) {
@@ -16,9 +17,10 @@ function loadDataTable() {
         },
         width: "5%",
       },
+      { data: "isbn", width: "15%" },
       { data: "price", width: "5%" },
       { data: "author", width: "10%" },
-      { data: "category.name", width: "10%" },
+      { data: "category.name", width: "15%" },
       {
         data: "id",
         render: function (data) {

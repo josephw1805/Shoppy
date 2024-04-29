@@ -12,10 +12,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Stripe.net" Version="44.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Areas/Admin/Views/Company/" />
+    <Folder Include="Areas/Admin/Views/Order/" />
     <Folder Include="Areas/Customer/Views/Cart/" />
     <Folder Include="wwwroot/images/" />
     <Folder Include="wwwroot/images/product/" />

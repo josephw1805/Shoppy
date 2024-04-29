@@ -107,6 +107,7 @@ namespace BulkyBookWeb.Areas.Identity.Pages.Account
             public string Role { get; set; }
             [ValidateNever]
             public IEnumerable<SelectListItem> RoleList { get; set; }
+            [ValidateNever]
             public IEnumerable<SelectListItem> CompanyList { get; set; }
             public string Address { get; set; }
             public string City { get; set; }

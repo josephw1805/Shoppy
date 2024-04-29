@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="~/ShoppyWeb.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-    <link rel="stylesheet" href="//cdn.datatables.net/2.0.5/css/dataTables.dataTables.min.css">
+    <link href="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,6 +26,10 @@
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="Order" asp-action="Index">Manage
+                                Order</a>
                         </li>
                         @if (User.IsInRole(SD.Role_Admin))
                         {
@@ -75,7 +79,7 @@
     <script src="https://cdn.tiny.cloud/1/pd5ylfe65jdfycngm2w4a68rsm0zcjfuj1opc1fg6ifvtar3/tinymce/7/tinymce.min.js"
         referrerpolicy="origin"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="//cdn.datatables.net/2.0.5/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
