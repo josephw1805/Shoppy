@@ -10096,11 +10096,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/josephweng/Desktop/Shoppy/ShoppyWeb/ShoppyWeb.csproj",
+      "projectUniqueName": "/Users/josephweng/Projects/Shoppy/ShoppyWeb/ShoppyWeb.csproj",
       "projectName": "ShoppyWeb",
-      "projectPath": "/Users/josephweng/Desktop/Shoppy/ShoppyWeb/ShoppyWeb.csproj",
+      "projectPath": "/Users/josephweng/Projects/Shoppy/ShoppyWeb/ShoppyWeb.csproj",
       "packagesPath": "/Users/josephweng/.nuget/packages/",
-      "outputPath": "/Users/josephweng/Desktop/Shoppy/ShoppyWeb/obj/",
+      "outputPath": "/Users/josephweng/Projects/Shoppy/ShoppyWeb/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/josephweng/.nuget/NuGet/NuGet.Config"
@@ -10115,11 +10115,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/josephweng/Desktop/Shoppy/Shoppy.DataAccess/Shoppy.DataAccess.csproj": {
-              "projectPath": "/Users/josephweng/Desktop/Shoppy/Shoppy.DataAccess/Shoppy.DataAccess.csproj"
+            "/Users/josephweng/Projects/Shoppy/Shoppy.DataAccess/Shoppy.DataAccess.csproj": {
+              "projectPath": "/Users/josephweng/Projects/Shoppy/Shoppy.DataAccess/Shoppy.DataAccess.csproj"
             },
-            "/Users/josephweng/Desktop/Shoppy/Shoppy.Models/Shoppy.Models.csproj": {
-              "projectPath": "/Users/josephweng/Desktop/Shoppy/Shoppy.Models/Shoppy.Models.csproj"
+            "/Users/josephweng/Projects/Shoppy/Shoppy.Models/Shoppy.Models.csproj": {
+              "projectPath": "/Users/josephweng/Projects/Shoppy/Shoppy.Models/Shoppy.Models.csproj"
             }
           }
         }
