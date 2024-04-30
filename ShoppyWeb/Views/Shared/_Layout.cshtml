@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/shop.png" alt="Shoppy" style="width:30px" >
+                    <img src="~/images/shop.png" alt="Shoppy" style="width:30px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,6 +63,10 @@
                                         <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Register">Create
                                             User</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="User"
+                                            asp-action="Index">Manage User</a>
+                                    </li>
                                 </ul>
                             </li>
                         }
@@ -79,16 +83,24 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container mb-5">
         <main role="main" class="pb-3">
             <partial name="_Notification" />
             @RenderBody()
         </main>
     </div>
+    <footer class="border-top footer bg-primary">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item text-center">
+                <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+        </ul>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
