@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace Shoppy.Models;
 
@@ -32,5 +33,6 @@ public class Product
   public int CategoryId { get; set; }
   [ForeignKey("CategoryId")]
   public Category Category { get; set; }
-  public string ImageUrl { get; set; }
+  [ValidateNever]
+  public List<ProductImage> ProductImages { get; set; }
 }

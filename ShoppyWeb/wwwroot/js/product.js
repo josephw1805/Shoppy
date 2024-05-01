@@ -10,13 +10,6 @@ function loadDataTable() {
     ajax: { url: "/admin/product/getall" },
     columns: [
       { data: "title", width: "15%" },
-      {
-        data: "imageUrl",
-        render: function (imageUrl) {
-          return `<img src=${imageUrl} width="100%"></img>`;
-        },
-        width: "5%",
-      },
       { data: "isbn", width: "15%" },
       { data: "price", width: "5%" },
       { data: "author", width: "10%" },

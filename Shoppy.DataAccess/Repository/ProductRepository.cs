@@ -19,10 +19,7 @@ public class ProductRepository(ApplicationDbContext db) : Repository<Product>(db
       objFromDb.Description = obj.Description;
       objFromDb.CategoryId = obj.CategoryId;
       objFromDb.Author = obj.Author;
-      if (obj.ImageUrl != null)
-      {
-        objFromDb.ImageUrl = obj.ImageUrl;
-      }
+      objFromDb.ProductImages = obj.ProductImages;
     }
   }
 }
